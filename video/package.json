@@ -1,0 +1,28 @@
+{
+  "name": "video-codex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A TypeScript Remotion starter with an animated Full HD test composition.",
+  "scripts": {
+    "start": "remotion studio src/index.ts --no-open",
+    "studio": "remotion studio src/index.ts --no-open",
+    "typecheck": "tsc --noEmit",
+    "build": "remotion bundle src/index.ts",
+    "render": "remotion render src/index.ts TestScene out/test-scene.mp4 --codec=h264 --pixel-format=yuv420p --concurrency=2",
+    "still": "remotion still src/index.ts TestScene out/test-scene.png --frame=45"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.540",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "remotion": "4.0.540"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
